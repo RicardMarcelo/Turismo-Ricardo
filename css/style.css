@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index:10000;
+   }
+body{
+    background-color: #00B4D8;
+    font-family:'Roboto', sans-serif;
+}
+
+#logo{
+    margin: 5px 0px 0px 5px;
+}
+#nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gold;
+    padding: 20px;
+    font-weight:bold;
+}
+.linksNav{
+    display: flex;
+    gap: 30px;
+    list-style:none;
+}
+.linksNav a:hover{
+    background-color: blue;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logoTR{
+    width: 20px;
+    height: 20px;
+    margin-bottom: -3px;
+    padding: 0px;
+    color:white;
+}
+.logo-texto{
+    color:blue
+}
+
+#banner{
+    background-image: url("../assets/img/GLACIAR.jpeg");
+    background-size:cover;
+    background-position: center;
+    height:400px;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-banner{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 160px;
+    font-weight: bold;
+    font-size:4vw;
+    -webkit-text-stroke: 0.3vw black;
+    color: yellow;
+}
+
+.b-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#historia{
+    text-align: center;
+}
+#historia h2{
+    margin: 30px 0px;
+    font-size: 3em;
+    color:yellow;
+    -webkit-text-stroke: 0.2vw black;
+}
+
+.sitios-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 50px;
+}
+
+.sitios-grid:hover .sitios-item {
+    opacity: 0.3;
+}
+  
+/* Transfomacion para escalar  */
+.sitios-grid:hover .sitios-item:hover {
+    transform: scale(1.2);
+    /* Como queremos que se aplique la transformacion de escala */
+    transform-origin: center center;
+    opacity: 1;
+    transition: 500ms all;
+}
+
+.sitios-item{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.sitios-item-img {
+    width: 200px;
+    height: 300px;
+    /* indica cómo el contenido de <img> debería redimensionarse
+     para ajustarse a su contenedor. */
+    object-fit: cover;
+}
+
+.sitios-item-detalle {
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    /* para crear un capa de overlay  */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* Para los elementos con una posición absoluta 
+    determina la distancia entre el borde superior del elemento y 
+    el borde superior del bloque que lo contiene. */
+    top: 0;
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    padding: 10px;
+    
+}
+
+  
+.sitios-item:hover .sitios-item-detalle {
+    opacity: 1;
+    transition: 500ms opacity;
+}
+  
+.sitios-item-detalle-lugar {
+    color: white;
+    margin: 5px 0px 0px 0px;
+}
+  
+.sitios-item-detalle-fecha {
+    color: white;
+    font-size: 8px;
+    margin: 3px 0px;
+}
+.sitios-item-detalle-museo{
+    color:yellow;
+    text-align: right;
+}
+
+/* Oferta  */
+#provincias{
+    color:#fff
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#ofertas {
+    background: rgb(21, 75, 150);
+    text-align: center;
+    font-size: 3em;
+}
+
+#ofertas span {
+    color:yellow;
+    -webkit-text-stroke: 0.2vw black;
+}
+
+.caja-animada {
+    box-shadow: 0 0 20px 0 yellow;
+    color: #fff;
+}
+
+.caja-animada > * {
+    padding: 1em;
+}
+
+::placeholder{
+    color:yellow;
+}
+
+.formulario-contacto {
+    background: rgb(21, 75, 150);
+}
+
+.formulario-contacto form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form label {
+    display: block;
+}
+
+.formulario-contacto form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario-contacto form .block {
+    grid-column: 1 / 3;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #c9c62b;
+}
+
+.formulario-contacto form button {
+    background: #030b41;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.formulario-contacto form button:hover,
+.formulario-contacto form button:focus {
+    background: #c9c62b;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* Explorador mapa */
+.Explorador {
+    background: rgb(21, 75, 150);
+}
+
+.Explorador h4, .Explorador ul, .Explorador p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* Tamaño grande */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .caja-animada {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .caja-animada > * {
+        padding: 2em;
+    }
+    .Explorador h4,
+    .Explorador ul,
+    .Explorador p {
+        text-align: left;
+    }
+}
+
+.d-form{
+    width: 100%;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+
+.inContacto{
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    margin: 10px 0px;
+    outline: none;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footer{
+    background-color: blue;
+    color:white;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+
+#footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    color:yellow;
+}

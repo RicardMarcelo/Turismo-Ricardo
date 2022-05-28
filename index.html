@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Ricardo</title>
+    <!-- Ícono favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Fuentes de Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
+    <!-- Librería Font Awesome  -->
+    <script src="https://kit.fontawesome.com/742af8f384.js" crossorigin="anonymous"></script>
+    <!-- Hoja de estilo CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+       <header id="header">
+        <nav id="nav">
+        <div id="logo">
+            <i class="fa-solid fa-suitcase fa-flip" style="--fa-animation-duration: 3s; color: blue;" ></i>
+            <img class="logoTR" src="./assets/img/android-chrome-192x192.png" alt="TR">
+            <span class="logo-texto">
+                Turismo Ricardo
+            </span>
+        </div>
+            <ul class="linksNav">
+                <li><a href="#historia"> Histórico </a></li>
+                <li><a href="#ofertas"> Ofertas </a></li>
+                <li><a href="#contacto"> Contacto </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner" class="b-flex">
+            <div class="contenedor">
+                <div class="texto-banner">
+                    <h1>Turismo Ricardo</h1>
+                    <h1>Viajar por Argentina</h1>
+                </div>              
+            </div>
+        </section>
+        
+        <section id="historia">
+            <div class="contenedor">
+                <h2>Turismo histórico</h2>
+               
+                <div class="sitios-grid">
+                    <div class="sitios-item">
+                        <img src="https://www.argentina.gob.ar/sites/default/files/relevo_del_cabildo_2.jpg" width="200" height="300" alt="" class="sitios-item-img">
+                        <div class="sitios-item-detalle">
+                            <p class="sitios-item-detalle-lugar">Ciudad de Buenos Aires </p>
+                            <p class="sitios-item-detalle-fecha">25 de mayo</p>
+                            <a href="https://cabildonacional.cultura.gob.ar/" target="_self" class="sitios-item-detalle-museo">Museo</a>
+                        </div>
+                    </div>
+                
+                
+                    <div class="sitios-item">
+                        <img src="https://static.hosteltur.com/app/public/uploads/img/articles/2019/11/07/L_134003_salta001.jpg" width="200" height="300" alt="" class="sitios-item-img">
+                        <div class="sitios-item-detalle">
+                            <p class="sitios-item-detalle-lugar">Salta</p>
+                            <p class="sitios-item-detalle-fecha">17 de junio</p>
+                            <a href="https://guemes.salta.gob.ar/" target="_self" class="sitios-item-detalle-museo">Museo</a>
+                        </div>
+                    </div>
+
+                    <div class="sitios-item">
+                        <img src="https://www.clarin.com/img/2019/06/29/rosario-una-ciudad-historica-para___98mGu-31m_340x340__1.jpg" width="200" height="300" alt="" class="sitios-item-img">
+                        <div class="sitios-item-detalle">
+                            <p class="sitios-item-detalle-lugar">Rosario</p>
+                            <p class="sitios-item-detalle-fecha">20 de junio</p>
+                            <a href="https://es-la.facebook.com/museovirtualrosario/" target="_self" class="sitios-item-detalle-museo">Museo</a>
+                        </div>
+                    </div>
+
+                    <div class="sitios-item">
+                        <img src="https://www.mendoza.edu.ar/wp-content/uploads/2016/08/El-Plumerillo41-300x225.jpg"  width="200" height="300" alt="" class="sitios-item-img">
+                        <div class="sitios-item-detalle">
+                            <p class="sitios-item-detalle-lugar">El Plumerillo</p>
+                            <p class="sitios-item-detalle-fecha">17 de agosto</p>
+                            <a href="https://mendozaencasa.com/mendoza-tierra-de-museos-museo-campo-historico-el-plumerillo-en-las-heras/1656/"  target="_self" class="sitios-item-detalle-museo">Museo</a>
+                        </div>
+                    </div>
+                    
+                                        
+                </div>
+            </div>
+        </section>
+            <br><br><br>
+    <!-- Ofertas  -->
+    <section class="content">
+
+        <h1 id="ofertas"> <span>Viaje a las provincias</span></h1>
+
+        <div class="caja-animada">
+            <div class="formulario-contacto">
+                <h3>Elija lo que quiera cuando quiera</h3>
+                <h3>Le enviaremos un presupuesto</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ej. Ricardo" autocomplete="off" required>
+                    </p>
+
+
+                    <p>
+                        <label>Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ej. Vázquez" autocomplete="off" required>
+                    </p>
+
+
+                    <p>
+                        <label>Correo electrónico (email)</label>
+                        <input type="email" name="email" id="email" placeholder="Ej. tumail@serv.com" autocomplete="off" required>
+                    </p>
+
+
+                    <p>
+                        <label>Teléfono </label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ej. 01143216789">
+                    </p>
+
+
+                    <p>
+                        <label for="provincia">Provincia a visitar</label>
+        <select name="provincia" id="provincia" required>
+	      <option value="">--Selecione--</option>
+          <option value="Buenos Aires">Bs. As.</option>
+          <option value="Catamarca">Catamarca</option>
+          <option value="Chaco">Chaco</option>
+          <option value="Chubut">Chubut</option>
+          <option value="Cordoba">Cordoba</option>
+          <option value="Corrientes">Corrientes</option>
+          <option value="Entre Rios">Entre Rios</option>
+          <option value="Formosa">Formosa</option>
+          <option value="Jujuy">Jujuy</option>
+          <option value="La Pampa">La Pampa</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="Mendoza">Mendoza</option>
+          <option value="Misiones">Misiones</option>
+          <option value="Neuquen">Neuquen</option>
+          <option value="Rio Negro">Rio Negro</option>
+          <option value="Salta">Salta</option>
+          <option value="San Juan">San Juan</option>
+          <option value="San Luis">San Luis</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Sgo. del Estero">Sgo. del Estero</option>
+          <option value="Tierra del Fuego">Tierra del Fuego</option>
+          <option value="Tucuman">Tucuman</option>
+        </select>
+                    </p>
+               
+
+                    <p>
+                        <label>Cantidad de viajeros</label>
+                        <input type="number" name="viajeros" id="viajeros" min="1" max="10" step="1" required>
+                    </p>
+
+
+                    <p >
+                       <label for="semana">Semana</label>
+                       <input type="week" name="semana" id="semana" required> 
+                       
+                     </p>
+
+                
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+
+                </form>
+
+            </div>
+            <div class="Explorador">
+                <h4>Explore el lugar que quiera</h4>
+                <p></p>
+                <p></p>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55170152.180901706!2d-100.21273249261891!3d-32.43739892755754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1653682928315!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto">
+        <div class="container d-flex">
+            <div class="d-form">
+                <h2>Contacto</h2>
+                <h2>Elija su propia aventura</h2>
+                <form name="contactoFinal" action="" onsubmit="return validateForm()" method="get">
+                    <div class="div-field">
+                        <input class="inContacto" type="text" name="nombreApellido" id="nombreApellido" placeholder="Ingrese Nombre Apellido" required>
+                    </div>
+                    <div class="div-field"> 
+                        <input class="inContacto" type="correo" name="correo" id="correo" placeholder="Ingrese Email" required>
+                    </div>
+                    <div class="div-field">
+                        <textarea class="inContacto" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Elije destino, fecha partida y llegada, cantidad de personas"></textarea>
+                    </div>
+                    <input type="submit" value="Enviar" class="block">
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer id="footer">Todos los derechos reservados a R.M.S. - 2022
+        <a href="">Preguntas Frecuentes</a>
+    </footer>
+    </div>
+
+</main>
+</body>
+   
+<script src="./js/index.js"></script>
+</html>

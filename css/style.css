@@ -312,6 +312,14 @@ ul {
     width: 100%;
     font-family: 'Roboto', sans-serif;
 }
+.boton{
+    background: #030b41;
+    color:white;
+    border: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 1em;
+}
 
 #footer{
     background-color: blue;
